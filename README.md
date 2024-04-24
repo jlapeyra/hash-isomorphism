@@ -1,2 +1,2 @@
-# hash-isomorphism
+# Hash isomorphism
 Graph isomorphism using hashes
