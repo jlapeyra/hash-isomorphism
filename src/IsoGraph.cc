@@ -154,7 +154,7 @@ public:
         IsoGraph* other = &otherGraph; //for symmetry with `this`
         if (this->numVertices != other->numVertices) return nothing;
         if (this->numEdges != other->numEdges) return nothing;
-
+        //TODO
     }
 };
 
