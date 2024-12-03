@@ -72,9 +72,9 @@ public:
     static hash getHash(hash h1, const std::multiset<hash>& h2) {
         hash result = 0;
         for (hash h : h2) {
-            result = 31 * result + h;
+            result = (MERSENNE_19 * result + h) % MERSENNE_61;
         }
-        // 31 and 127 are primes 2^p-1
+        result = (MERSENNE_31 * result + h1) % MERSENNE_61;
         return result;
     }
 
