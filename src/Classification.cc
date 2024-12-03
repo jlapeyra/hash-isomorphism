@@ -85,22 +85,7 @@ public:
         return os;
     }
 
-private:
-    ulong factorial(uint n) const {
-        ulong result = 1;
-        for (ulong i = 1; i <= n; i++) {
-            if (multOverflow(result, i)) return LONG_MAX;
-            else result *= i;
-        }
-        return result;
-    }
 
-    bool multOverflow(ulong a, ulong b) {
-        //if (a == LONG_MAX || b == LONG_MAX) return true;
-        if (b != 0 && a > LONG_MAX / b) return true;
-        if (a != 0 && b > LONG_MAX / a) return true;
-        return false;
-    }
 };
 
 
