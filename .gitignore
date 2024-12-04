@@ -1,4 +1,6 @@
 *.exe
+*.x
+*.o
 *.bat
 *.tmp
 .vscode/
